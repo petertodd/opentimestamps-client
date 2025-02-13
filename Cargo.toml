@@ -1,0 +1,16 @@
+[package]
+name = "opentimestamps-client"
+version = "0.1.0"
+edition = "2024"
+default-run = "ots"
+
+[dependencies]
+opentimestamps = { git = "https://github.com/petertodd/rust-opentimestamps.git" }
+
+clap = { version = "4.5.27", features = ["derive"] }
+bitcoin_hashes = { version = "0.16.0", features = ["bitcoin-io"] }
+
+thiserror = "2.0.11"
+
+[[bin]]
+name = "ots"
